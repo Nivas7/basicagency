@@ -3,7 +3,7 @@
 const VideoPlayer = () => {
     return ( 
         <div className="w-[100%] h-[100%]">
-            <video src="/public/intro.mp4" autoPlay muted loop className="w-[100%] h-[100%] object-cover"></video>
+            <video src="../assets/intro.mp4" autoPlay muted loop className="w-[100%] h-[100%] object-cover"></video>
         </div>
      );
 }
