@@ -1,0 +1,47 @@
+
+@keyframes header_fade-in {
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+
+@keyframes header_translate {
+    0% {
+        transform: translateY(1rem);
+      }
+      100% {
+        transform: translateY(0);
+      }
+}
+
+.link {
+    padding: 0 3rem;
+}
+
+.link:hover {
+    text-decoration: underline;
+    transition: all 20ms ease-in-out;
+}
+
+.header {
+    position: fixed;
+    z-index: 800;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: color 0.65s cubic-bezier(0.72,0,0.28,1);
+    will-change: transform;
+}
+
+.link {
+    animation: header_fade-in 0.5s cubic-bezier(0.28,0,0.49,1)  calc(0.05s + 0.1s + 6*0.25) forwards,header_translate 0.5s  cubic-bezier(0.28,0,0.49,1) calc(calc(0.05s + 0.1s + 6*0.25));
+}
+
+.header > button {
+    animation: header_fade-in 0.5s cubic-bezier(0.28,0,0.49,1) calc(0.5s + 0.35s) forwards,
+    header_translate 0.5s cubic-bezier(0.28,0,0.49,1) calc(0.05s + 0.75s);
+}
