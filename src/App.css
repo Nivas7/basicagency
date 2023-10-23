@@ -45,3 +45,22 @@
     animation: header_fade-in 0.5s cubic-bezier(0.28,0,0.49,1) calc(0.5s + 0.35s) forwards,
     header_translate 0.5s cubic-bezier(0.28,0,0.49,1) calc(0.05s + 0.75s);
 }
+
+.over {
+    width: calc((1366px + 2rem - 8rem*2)/12*5.5 - 2rem);
+}
+
+.case{
+    width: calc((1366px + 2rem - 8rem*2)/12*4 - 2rem);
+    flex-basis: 100%;
+}
+
+.case-txt{
+    max-width: calc((1436px + 2rem - 8rem*2)/12*2 - 2rem);
+}
+
+.img-h:hover {
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transition: all .30s;
+}

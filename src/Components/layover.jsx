@@ -26,8 +26,6 @@ const Layover = () => {
             // TODO: extra check on clientX needed here 
             // because mouseleave event not always firing
             // when slowly exiting left side of browser
-            left: clientX,
-            top: clientY,
             top: isVisible && clientY < 155 ? "50%" : clientY,
             left: isVisible && clientY < 155 ? "50%" : clientX, 
 

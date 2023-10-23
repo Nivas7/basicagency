@@ -3,6 +3,9 @@ import './App.css'
 import Navbar from './Components/Navbar';
 import VideoPlayer from './Components/VideoPlayer';
 import Layover from './Components/layover';
+import Awards from './Components/Awards';
+import HomeLayout from './Components/Home';
+import CaseStudy from './Components/CaseStudy';
 
 function App() {
 
@@ -22,6 +25,9 @@ function App() {
         <VideoPlayer />
         <Layover />
       </div>
+      <Awards />
+      <HomeLayout />
+      <CaseStudy />
     </div>
   )
 }
